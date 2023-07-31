@@ -177,20 +177,67 @@
 // // d(20)/ d(10) = 2
 
 // 18
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-  let message;
-  let totalPrice = pricePerDroid * orderedQuantity;
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   let totalPrice = pricePerDroid * orderedQuantity;
+//   if (totalPrice > customerCredits) {
+//     message = `Insufficient funds!`;
+//   } else {
+//     customerCredits -= totalPrice;
+//     message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`;
+//   }
+//   return message;
+// }
 
-  if (totalPrice > customerCredits) {
-    message = "Insufficient funds!";
-  } else {
-    customerCredits - totalPrice = customerCredits
-    message = "You ordered ${totalPrice} droids, you have ${customerCredits} credits left";
-  }
-  return message;
-}
+// console.log(makeTransaction(3000, 5, 23000));
+// // result "You ordered 5 droids, you have 8000 credits left"
+// console.log(makeTransaction(5000, 10, 8000));
+// // result "Insufficient funds!"
 
-console.log(makeTransaction(3000, 5, 23000))
-// result "You ordered 5 droids, you have 8000 credits left"
-console.log(makeTransaction(5000, 10, 8000))
-// result "Insufficient funds!"
+// 19
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+//   if (password === null) {
+//     message = "Canceled by user!";
+//   } else if (password === ADMIN_PASSWORD) {
+//     message = "Welcome!";
+//   } else {
+//     message = "Access denied, wrong password!";
+//   }
+
+//   return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// // "Access denied, wrong password!";
+// console.log(checkPassword(null));
+// // "Canceled by user!";
+// console.log(checkPassword("jqueryismyjam"));
+// // "Welcome!";
+
+// 20
+// function checkStorage(available, ordered) {
+//   let message;
+
+//   if (ordered === 0) {
+//     message = "There are no products in the order!";
+//   } else if (ordered > available) {
+//     message = "Your order is too large, there are not enough items in stock!";
+//   } else {
+//     message = "The order is accepted, our manager will contact you";
+//   }
+
+//   return message;
+// }
+
+// console.log(checkStorage(100, 50));
+// // "The order is accepted, our manager will contact you";
+// console.log(checkStorage(100, 130));
+// // "Your order is too large, there are not enough items in stock!";
+// console.log(checkStorage(70, 0));
+// // "There are no products in the order!";
+
+// 21
+function isNumberInRange(start, end, number) {}

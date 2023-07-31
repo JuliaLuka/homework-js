@@ -95,5 +95,102 @@
 //   return message;
 // }
 // console.log(makeOrderMessage(2, 100, 50));
+// 250
 
 // 13
+// function isAdult(age) {
+//   const passed = age >= 18;
+//   return passed;
+// }
+// console.log(isAdult(17));
+// // false
+// console.log(isAdult(40));
+// // true
+
+// 14
+// function isValidPassword(password) {
+//   const SAVED_PASSWORD = "jqueryismyjam";
+//   const isMatch = SAVED_PASSWORD === password;
+//   return isMatch;
+// }
+
+// console.log(isValidPassword("mangodab3st"));
+// //false
+// console.log(isValidPassword("kiwirul3z"));
+// //false
+// console.log(isValidPassword("jqueryismyjam"));
+// //true
+
+// 15
+// function checkAge(age) {
+//   let message;
+//   if (age >= 18) {
+//     message = "You are an adult";
+//   } else {
+//     message = "You are a minor";
+//   }
+//   return message;
+// }
+
+// console.log(checkAge(16));
+// // false "You are a minor"
+// console.log(checkAge(31));
+// // true "You are an adult"
+
+// 16
+// function checkStorage(available, ordered) {
+//   let message;
+
+//   if (available < ordered) {
+//     message = "Not enough goods in stock!";
+//   } else {
+//     message = "Order is processed, our manager will contact you.";
+//   }
+//   return message;
+// }
+
+// console.log(checkStorage(100, 50));
+// // result "Order is processed, our manager will contact you."
+// console.log(checkStorage(100, 130));
+// // result "Not enough goods in stock!"
+// console.log(checkStorage(200, 20));
+// // result "Order is processed, our manager will contact you."
+
+// 17
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
+
+// a += 2;
+// b -= 4;
+// c *= 3;
+// d /= 10;
+
+// console.log(a);
+// // a(5)+ a(2) = 7
+// console.log(b);
+// // b(10)- b(4) = 6
+// console.log(c);
+// // c(15)* c(3) = 45
+// console.log(d);
+// // d(20)/ d(10) = 2
+
+// 18
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
+  let totalPrice = pricePerDroid * orderedQuantity;
+
+  if (totalPrice > customerCredits) {
+    message = "Insufficient funds!";
+  } else {
+    customerCredits - totalPrice = customerCredits
+    message = "You ordered ${totalPrice} droids, you have ${customerCredits} credits left";
+  }
+  return message;
+}
+
+console.log(makeTransaction(3000, 5, 23000))
+// result "You ordered 5 droids, you have 8000 credits left"
+console.log(makeTransaction(5000, 10, 8000))
+// result "Insufficient funds!"

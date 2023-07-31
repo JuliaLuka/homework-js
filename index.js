@@ -73,3 +73,27 @@
 // console.log(result);
 // result = add(5, 10, 15);
 // console.log(result);
+
+// 10
+// function makeMessage(name, price) {
+//   const message = `You picked ${name}, price per item is ${price} credits`;
+//   return message;
+// }
+// console.log(makeMessage("Julia", 10));
+
+// 11
+// function calculateTotalPrice(orderedQuantity, pricePerItem) {
+//   const totalPrice = orderedQuantity * pricePerItem;
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice(7, 10));
+
+// 12
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+//   const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+//   return message;
+// }
+// console.log(makeOrderMessage(2, 100, 50));
+
+// 13

@@ -240,4 +240,25 @@
 // // "There are no products in the order!";
 
 // 21
-function isNumberInRange(start, end, number) {}
+// function isNumberInRange(start, end, number) {
+//   const isInRange = start <= number && number <= end;
+//   return isInRange;
+// }
+
+// console.log(isNumberInRange(10, 30, 17));
+// // result true
+// console.log(isNumberInRange(10, 30, 5));
+// // result false
+
+// 22
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === "pro" || subType === "vip";
+//   return canAccessContent;
+// }
+
+// console.log(checkIfCanAccessContent("pro"));
+// // result true
+// console.log(checkIfCanAccessContent("vip"));
+// // result true
+// console.log(checkIfCanAccessContent("starter"));
+// // result false

@@ -262,3 +262,47 @@
 // // result true
 // console.log(checkIfCanAccessContent("starter"));
 // // result false
+
+// 23
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = start <= number && number <= end;
+//   const isNotInRang = !isInRange;
+
+//   return isNotInRang;
+// }
+
+// console.log(isNumberNotInRange(10, 30, 17));
+// // result false
+// console.log(isNumberNotInRange(10, 30, 5));
+// // result false
+// console.log(isNumberNotInRange(20, 50, 24));
+// // result false
+
+// 24
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+
+//   if (totalSpent >= 50000) {
+//     discount = 0.1;
+//   } else if (20000 <= totalSpent && totalSpent < 50000) {
+//     discount = 0.05;
+//   } else if (5000 <= totalSpent && totalSpent < 20000) {
+//     discount = 0.02;
+//   } else if (totalSpent < 5000) {
+//     discount = 0;
+//   }
+//   return discount;
+// }
+
+// console.log(getDiscount(137000));
+// // result 0.1
+// console.log(getDiscount(46900));
+// // result 0.05
+// console.log(getDiscount(8250));
+// // result 0.02
+// console.log(getDiscount(1300));
+// // result 0

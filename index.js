@@ -477,3 +477,27 @@
 // console.log(normalizeInput("Big SALE")); // result "big sale"
 
 // 35
+// function checkForName(fullname, name) {
+//   const result = fullname.includes(name);
+//   return result;
+// }
+
+// console.log(checkForName("Egor Kolbasov", "Egor")); // result true
+// console.log(checkForName("Egor Kolbasov", "egOr")); // result false
+// console.log(checkForName("Vadim Nekrasov", "Dima")); // result false
+
+// 36
+// function checkForSpam(message) {
+//   let result;
+
+//   if (message.includes("spam") || message.includes("sale")) {
+//     message = message.toLowerCase();
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+//   return result;
+// }
+
+// console.log(checkForSpam("JavaScript weekly newsletter")); // result false
+// console.log(checkForSpam("Get best sale offers now!")); // result true

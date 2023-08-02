@@ -306,3 +306,174 @@
 // // result 0.02
 // console.log(getDiscount(1300));
 // // result 0
+
+// 25
+// function checkStorage(available, ordered) {
+//   let message;
+//   message =
+//     ordered > available
+//       ? "Not enough goods in stock!"
+//       : "The order is accepted, our manager will contact you";
+
+//   return message;
+// }
+
+// console.log(checkStorage(100, 50));
+// // result "The order is accepted, our manager will contact you"
+// console.log(checkStorage(100, 130));
+// // result "Not enough goods in stock!"
+// console.log(checkStorage(200, 20));
+// // result "The order is accepted, our manager will contact you"
+
+// 26
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+//   message =
+//     password === ADMIN_PASSWORD
+//       ? "Access is allowed"
+//       : "Access denied, wrong password!";
+
+//   return message;
+// }
+
+// console.log(checkPassword("jqueryismyjam"));
+// // result "Access is allowed"
+// console.log(checkPassword("angul4r1sl1f3"));
+// // result "Access denied, wrong password!"
+// console.log(checkPassword("r3actsux"));
+// // result "Access denied, wrong password!"
+
+// 27
+// function getSubscriptionPrice(type) {
+//   let price;
+
+//   switch (type) {
+//     case "starter":
+//       price = 0;
+//       break;
+
+//     case "professional":
+//       price = 20;
+//       break;
+
+//     case "organization":
+//       price = 50;
+//       break;
+//   }
+//   return price;
+// }
+// console.log(getSubscriptionPrice("professional"));
+// // result 20
+// console.log(getSubscriptionPrice("organization"));
+// // result 50
+// console.log(getSubscriptionPrice("starter"));
+// // result 0
+
+// 28
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+//   switch (password) {
+//     case null:
+//       message = "Canceled by user!";
+//       break;
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+//   return message;
+// }
+
+// console.log(checkPassword("mangohackzor")); // result "Access denied, wrong password!";
+// console.log(checkPassword(null)); // result "Canceled by user!";
+// console.log(checkPassword("polyhax")); // result "Access denied, wrong password!";
+// console.log(checkPassword("jqueryismyjam")); // result  "Welcome!";
+
+// 29
+// function getShippingCost(country) {
+//   let message;
+
+//   switch (country) {
+//     case "China":
+//       message = "Shipping to China will cost 100 credits";
+//       break;
+//     case "Chile":
+//       message = "Shipping to Chile will cost 250 credits";
+//       break;
+//     case "Australia":
+//       message = "Shipping to Australia will cost 170 credits";
+//       break;
+//     case "Jamaica":
+//       message = "Shipping to Jamaica will cost 120 credits";
+//       break;
+//     default:
+//       message = "Sorry, there is no delivery to your country";
+//   }
+//   return message;
+// }
+// console.log(getShippingCost("Australia")); // result Shipping to Australia will cost 170 credits
+// console.log(getShippingCost("Germany")); // result Sorry, there is no delivery to your country
+// console.log(getShippingCost("China")); // result Shipping to China will cost 100 credits
+// console.log(getShippingCost("Chile")); // result Shipping to Chile will cost 250 credits
+// console.log(getShippingCost("Jamaica")); // result Shipping to Jamaica will cost 120 credits
+// console.log(getShippingCost("Sweden")); // result Sorry, there is no delivery to your country
+
+// 30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`;
+//   return message;
+// }
+// console.log(getNameLength("Poly")); // result "Name Poly is 4 characters long"
+// console.log(getNameLength("Harambe")); // result "Name Harambe is 6 characters long"
+// console.log(getNameLength("Billy")); // result "Name Billy is 5 characters long"
+// console.log(getNameLength("Joe")); // result "Name Joe is 3 characters long"
+
+// 31
+// const courseTopic = "JavaScript essentials";
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// console.log(courseTopicLength); // result 21
+// console.log(firstElement); // result J
+// console.log(lastElement); // result s
+
+// 32
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);
+//   return substring;
+// }
+// console.log(getSubstring("Hello world", 3)); // result "Hel"
+// console.log(getSubstring("Hello world", 6)); // result "Hello"
+// console.log(getSubstring("Hello world", 8)); // result "Hello wo"
+// console.log(getSubstring("Hello world", 11)); // result "Hello world"
+// console.log(getSubstring("Hello world", 0)); // result ""
+
+// 33
+// function formatMessage(message, maxLength) {
+//   let result;
+//   result =
+//     message.length <= maxLength ? message : message.slice(0, maxLength) + "...";
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16)); // result "Curabitur ligula..."
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // result "Curabitur ligula sapien"
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // result "Nunc sed turpis..."
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // result "Nunc sed turpis a felis in nunc fringilla"
+
+// 34
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase();
+//   return normalizedInput;
+// }
+// console.log(normalizeInput("Hello world")); // result "hello world"
+// console.log(normalizeInput("This ISN'T SpaM")); // result "this isn't spam"
+// console.log(normalizeInput("Big SALE")); // result "big sale"
+
+// 35

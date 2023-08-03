@@ -137,5 +137,43 @@
 
 // 16
 // function makeArray(firstArray, secondArray, maxLength) {
-//     const
+//   const newArray = firstArray.concat(secondArray);
+//   if (newArray.length > maxLength) {
+//     return newArray.slice(0, maxLength);
+//   }
+//   return newArray;
 // }
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); //result (3) ['Mango', 'Poly', 'Ajax']
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); //result (4) ['Mango', 'Poly', 'Houston', 'Ajax']
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); //result (3) ['Mango', 'Ajax', 'Chelsea']
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); //result (2) ['Earth', 'Jupiter']
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); //result (4) ['Earth', 'Jupiter', 'Neptune', 'Uranus']
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); //result []
+
+// 17
+// const start = 3;
+// const end = 7;
+// for (let i = start; i <= end; i += 1) {
+//   console.log(i);
+// }
+// //result 3,4,5,6,7
+
+// 18 ????????
+// function calculateTotal(number) {
+//   let total = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//     total += i;
+//   }
+//   return total;
+// }
+// console.log(calculateTotal(1)); //result 1
+// console.log(calculateTotal(3)); //result 6 (1+2+3=6)
+// console.log(calculateTotal(7)); //result 28 (1+2+3+4+5+6+7=28)
+
+// 19
+const fruits = ["apple", "plum", "pear", "orange"];
+for (let i = 0; i < 4; i += 1) {
+  // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}

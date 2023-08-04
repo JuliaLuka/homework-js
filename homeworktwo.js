@@ -156,24 +156,80 @@
 // for (let i = start; i <= end; i += 1) {
 //   console.log(i);
 // }
-// //result 3,4,5,6,7
+//result if i+=1 / 3,4,5,6,7
+//result if i+=2 / 3,5,7
+//result if i+=3 / 3,6
 
 // 18 ????????
 // function calculateTotal(number) {
 //   let total = 0;
 //   for (let i = 1; i <= number; i += 1) {
-//     total += i;
+//     total += i; // total + i = total;
 //   }
 //   return total;
 // }
 // console.log(calculateTotal(1)); //result 1
 // console.log(calculateTotal(3)); //result 6 (1+2+3=6)
-// console.log(calculateTotal(7)); //result 28 (1+2+3+4+5+6+7=28)
+// console.log(calculateTotal(10));//result 28 (1+2+3+4+5+6+7=28)
 
 // 19
-const fruits = ["apple", "plum", "pear", "orange"];
-for (let i = 0; i < 4; i += 1) {
-  // Change this line
-  const fruit = fruits[i]; // Change this line
-  console.log(fruit);
-}
+// const fruits = ["apple", "plum", "pear", "orange"];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit); //result apple plum pear orange
+// }
+
+// 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4])); //result 12 + 85 + 37 + 4 = 138
+// console.log(calculateTotalPrice([164, 48, 291])); //result 503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); //result 1116
+
+// 21
+// function findLongestWord(string) {
+//   const words = string.split(" ");
+//   let longestWord = "";
+
+//   for (let i = 0; i < words.length; i += 1) {
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+//   }
+//   return longestWord;
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // result jumped
+// console.log(findLongestWord("Google do a roll")); // result Google
+// console.log(findLongestWord("May the force be with you")); // result force
+
+// 22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3)); // result (3) [1, 2, 3]
+// console.log(createArrayOfNumbers(14, 17)); // result (4) [14, 15, 16, 17]
+// console.log(createArrayOfNumbers(29, 34)); // result (6) [29, 30, 31, 32, 33, 34]
+
+// 23
+// function filterArray(numbers, value) {
+//   const newArray = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       newArray.push(numbers[i]);
+//     }
+//   }
+//   return newArray;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));

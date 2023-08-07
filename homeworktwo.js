@@ -170,7 +170,7 @@
 // }
 // console.log(calculateTotal(1)); //result 1
 // console.log(calculateTotal(3)); //result 6 (1+2+3=6)
-// console.log(calculateTotal(10));//result 28 (1+2+3+4+5+6+7=28)
+// console.log(calculateTotal(10)); //result 28 (1+2+3+4+5+6+7=28)
 
 // 19
 // const fruits = ["apple", "plum", "pear", "orange"];
@@ -183,7 +183,7 @@
 // function calculateTotalPrice(order) {
 //   let total = 0;
 //   for (i = 0; i < order.length; i += 1) {
-//     total += order[i];
+//     total += order[i]; // total + order[i] = total;
 //   }
 //   return total;
 // }
@@ -232,4 +232,80 @@
 //   return newArray;
 // }
 
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5];
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5];
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // [];
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76];
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76];
+
+// 24
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//   return fruits.includes(fruit);
+// }
+// console.log(checkFruit("plum")); // true
+// console.log(checkFruit("mandarin")); // false
+// console.log(checkFruit("pear")); // true
+// console.log(checkFruit("Pear")); // false
+
+// 25
+// function getCommonElements(array1, array2) {
+//   const result = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       result.push(array1[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4])); //result [2];
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19])); //result [1, 2];
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])); // result [12, 27, 3];
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])); // result [10, 30, 40];
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30])); // result [];
+
+// 26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (let i of order) {
+//     total += i;
+//   }
+
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4])); // 138
+// console.log(calculateTotalPrice([164, 48, 291])); // 503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); // 1116
+
+// 27
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   const number = numbers[i];
+
+//   //рефакторинг
+//   for (let i of numbers) {
+//     const number = i;
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // result [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // result [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // result []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // result [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // result [24, 41, 76]
+
+// 28
+function getEvenNumbers(start, end) {
+  const newArray = [];
+    for (let i of newArray) {
+      newArray = 
+  }
+}

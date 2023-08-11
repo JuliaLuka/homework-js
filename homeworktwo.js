@@ -303,9 +303,9 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 20)); // result [24, 41, 76]
 
 // 28
-function getEvenNumbers(start, end) {
-  const newArray = [];
-    for (let i of newArray) {
-      newArray = 
-  }
-}
+// function getEvenNumbers(start, end) {
+//   const newArray = [];
+//     for (let i of newArray) {
+//       newArray =
+//   }
+// }

@@ -1,30 +1,16 @@
-// function calculateTotal(number) {
-//   let total = 0;
-//   for (i = 1; i <= number; i += 1) {
-//     total += i;
-//   }
-//   return total;
-// }
-// console.log(calculateTotal(1));
+// // 22
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
 
-// 19
-// const fruits = ["apple", "plum", "pear", "orange"];
-
-// for (let i = 0; i < fruits.length; i += 1) {
-//   const fruit = fruits[i];
-//   console.log(fruit);
-// }
-
-// 20
-// function calculateTotalPrice(order) {
-//   let total = 0;
-
-//   for (i = 0; i < order.length; i += 1) {
-//     total += order[i];
-//   }
-//   return total;
-// }
-
-// console.log(calculateTotalPrice([12, 85, 37, 4]));
-
-// 21
+  for (i = min; i <= max; i += 1) {
+    numbers = min.push(max);
+  }
+  return numbers;
+}
+console.log(createArrayOfNumbers(29, 34));
+// Просим клиента подтвердить бронь на отель
+// и сохраняем в переменную результат работы confirm
+// Спрашиваем имя отеля в котором хотел бы остановится клиент
+// и сохраняем в переменную результат вызова prompt.
+console.log(0.17 + 0.24); // 0.41000000000000003
+console.log((0.17 + 0.24).toFixed(2)); // 0.41

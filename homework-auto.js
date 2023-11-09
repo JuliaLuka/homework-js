@@ -42,19 +42,57 @@ ext - рядок, що зберігає розширення, наприклад
 // console.log(createFileName("report ", "csv")); //"report.csv"
 // console.log(createFileName(" presentation", "xml")); //"presentation.xml"
 
-//3
+//3 Цикл while
 /* Функція calculateTotal(number) приймає ціле число (параметр number). 
 Доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. 
 Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6. */
-function calculateTotal(number) {
+// function calculateTotal(number) {
+//   let total = 0; //Iніціалізуємо змінну для зберігання суми чисел
+//   let currentNumber = 0; // Починаємо з числа 0
+//   while (currentNumber <= number) {
+//     // Поки поточне число менше або рівне введеному числу
+//     total += currentNumber; // Додаємо поточне число до загальної суми
+//     currentNumber += 1; // Збільшуємо поточне число на 1 для переходу до наступного числа
+//   }
+//   return total;
+// }
+// console.log(calculateTotal(1)); //1
+// console.log(calculateTotal(3)); //повертає 6
+// console.log(calculateTotal(0)); //повертає 0
+// console.log(calculateTotal(18)); //повертає 171
+// console.log(calculateTotal(24)); //повертає 300
+
+// 4 Цикл for
+// function calculateTotal(number) {
+//   let total = 0;
+
+//   for (i = 0; i <= number; i += 1) {
+//     total += i;
+//   }
+//   return total;
+// }
+// console.log(calculateTotal(1)); //повертає 1
+// console.log(calculateTotal(0)); //повертає 0
+// console.log(calculateTotal(7)); //повертає 28
+// console.log(calculateTotal(18)); //повертає 171
+// console.log(calculateTotal(24)); //повертає 300
+
+// 5
+/*Функція calculateEvenTotal(number) приймає ціле число(параметр number). 
+Доповни код функції так, щоб вона повертала суму всіх парних цілих чисел від одиниці
+до цього числа включно.Парні числа — це ті, що можна поділити на 2 без остачі
+(як це зробити розглядалося у темі Арифметичні операції у модулі 1).
+Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.*/
+function calculateEvenTotal(number) {
   let total = 0;
-  while () {
-    total += number;
+
+  for (i = 0; i <= number; i % 2) {
+    total += i;
   }
   return total;
 }
-console.log(calculateTotal(1)); //1
-console.log(calculateTotal(3)); //повертає 6
-console.log(calculateTotal(0)); //повертає 0
-console.log(calculateTotal(18)); //повертає 171
-console.log(calculateTotal(24)); //повертає 300
+console.log(calculateEvenTotal(1)); // 0
+console.log(calculateEvenTotal(3)); // 2
+console.log(calculateEvenTotal(7)); // 12
+console.log(calculateEvenTotal(18)); // 90
+console.log(calculateEvenTotal(27)); // 182
